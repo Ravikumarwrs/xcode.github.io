@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>icoder</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- Image and text -->
+      <nav class="navbar navbar-success bg-dark">
+        <img
+          src="/logo.jfif"
+          height="30"
+          class="d-incline-block align-top"
+          alt=""
+        />
+      </nav>
+      <a class="navbar-brand" href="">icoder</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              History
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+            style="margin: 2px"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+      <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip01">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationTooltip01"
+              placeholder="Name"
+              value=""
+              required
+            />
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip02">Last name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationTooltip02"
+              placeholder="Last name"
+              value=""
+              required
+            />
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltipUsername">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text"
+                  id="validationTooltipUsernamePrepend"
+                  >@</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="validationTooltipUsername"
+                placeholder="Username"
+                aria-describedby="validationTooltipUsernamePrepend"
+                required
+              />
+              <div class="invalid-tooltip">
+                Please choose a unique and valid username.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="date">D.O.B</label>
+            <input type="date" id="date" placeholder="Date of Birth" required />
+          </div>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Students
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Teachers
+          </label>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip03">City</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationTooltip03"
+              placeholder="City"
+              required
+            />
+            <div class="invalid-tooltip">Please provide a valid city.</div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationTooltip04">State</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationTooltip04"
+              placeholder="State"
+              required
+            />
+            <div class="invalid-tooltip">Please provide a valid state.</div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationTooltip05">Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationTooltip05"
+              placeholder="Zip"
+              required
+            />
+            <div class="invalid-tooltip">Please provide a valid zip.</div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Feedback</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              cols="100"
+            ></textarea>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+    </div>
+
+
+
+    <hr>
+    <br>
+    <div class="container">
+      <h4 class="en-Lang text-justify mb-0">
+        For any doubt related enquiry, please contact us on
+      </h4>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <h4 class="en-Lang text-uppercase">call us</h4>
+              <h4 class="hn-Lang text-uppercase" style="display: none">
+                हमें कॉल करें
+              </h4>
+              <p>097-2215656</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+              <i class="fa fa-fax fa-5x" aria-hidden="true"></i>
+              <h4 class="en-Lang text-uppercase">Fax Number</h4>
+              <h4 class="hn-Lang text-uppercase" style="display: none">
+                फैक्स नंबर
+              </h4>
+              <address>0052-2219711</address>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+              <i class="fa fa-globe fa-5x" aria-hidden="true"></i>
+              <h4 class="en-Lang text-uppercase">email</h4>
+              <h4 class="hn-Lang text-uppercase" style="display: none">ईमेल</h4>
+              <p>ceo_icoder@pvt.ltd</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+              <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
+              <h4 class="en-Lang text-uppercase">office</h4>
+              <h4 class="hn-Lang text-uppercase" style="display: none">
+                कार्यालय
+              </h4>
+              <address class="en-Lang">
+                7 Rajendra nagar, Patna - 800015 , Bihar.
+              </address>
+              <address class="hn-Lang" style="display: none">
+                7, सरदार पटेल मार्ग (मैंगल्स रोड), पटना - 800015, बिहार।
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <hr />
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>
+        © 2022-2024 Company, Inc. · <a href="#">Privacy</a> ·
+        <a href="#">Terms</a>
+      </p>
+    </footer>
+  </body>
+</html>
